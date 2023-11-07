@@ -1,9 +1,7 @@
 package task.task7;
 
 import task.Person;
-import task.task7.Actions.AddPersonImp;
-import task.task7.Actions.ExitActionImp;
-import task.task7.Actions.ShowPersonImp;
+import task.task7.Actions.*;
 import task.task7.Menu.Menu;
 
 import java.util.ArrayList;
@@ -17,6 +15,8 @@ public class Main {
         Menu menu = new Menu(personList, scanner);
         menu.addItem("Add Person", new AddPersonImp());
         menu.addItem("ShowPerson", new ShowPersonImp());
+        menu.addItem("Read from file", new ReadFromFileImp());
+        menu.addItem("Clear data in memory", new ClearDataMemoryImp());
         menu.addItem("Exit", new ExitActionImp());
         menu.run();
     }

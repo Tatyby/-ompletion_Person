@@ -1,10 +1,10 @@
 package task;
 
-import java.io.Serializable;
 
-public class Person implements Serializable {
+public class Person {
     private final String firstName;
     private final String lastName;
+
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

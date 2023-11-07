@@ -1,0 +1,2 @@
+Person{firstName='Таня', lastName='Буянова'}
+Person{firstName='Петя', lastName='Петров'}

@@ -1,0 +1,9 @@
+version: '1'
+services:
+   app:
+    container_name: task1
+    image: 'task1'
+    build:
+      context: .
+    ports:
+      - "8081:8081"
